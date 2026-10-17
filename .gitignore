@@ -1,0 +1,9 @@
+# The odin-html-* projects are separate GitHub repositories, checked out here as
+# siblings purely for local development: the family's Makefiles and ols.json
+# reach each other through relative collections (-collection:html=../odin-html-builder),
+# so they must live side by side on disk.
+# They are not part of this repository.
+odin-html-*/
+
+# macOS
+.DS_Store
