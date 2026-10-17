@@ -1,11 +1,9 @@
 # odin-html
 
 Server-rendered HTML for the [Odin](https://odin-lang.org) programming
-language, written from scratch in Odin, **with no dependencies beyond Odin's
-`core:` library**.
+language.
 
-Two libraries — a builder, and a component library on top of it. Each depends
-only downward, and each is usable on its own.
+Two libraries — a builder, and a component library on top of it.
 
 ```
 odin-html-builder   elements, attributes, components, render
@@ -21,9 +19,9 @@ odin-html-builder   elements, attributes, components, render
 
 ## What these are
 
-Libraries, not applications. The builder writes HTML and the components write
-markup; there is no server, router or templating language anywhere in the
-family, by design — Odin procedures are the templates.
+Libraries. The builder writes HTML to an `io.Writer` and the components write
+markup; there is no server, router or templating language, by design — Odin
+procedures are the templates.
 
 A page built from these components is complete without JavaScript. Where a
 component needs the browser, its client half is a custom element that adds
